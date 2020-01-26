@@ -6,18 +6,21 @@ import headerStyles from './header.module.scss'
 
 const Header = () => {
     return (
-        <header>
-            <h1>Clarity Hub</h1>
+        <header className={headerStyles.header}>
+            <h1>
+                <Link className={headerStyles.title} activeClassName={headerStyles.active_nav_item} to='/'>Clarity
+                </Link>
+            </h1>
             <nav>
-                <ul>
+                <ul className={headerStyles.nav_list}>
                     <li>
-                        <Link className={headerStyles.home_link} to="/">Home</Link>
+                        <Link className={headerStyles.nav_item} activeClassName={headerStyles.active_nav_item} to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/blog">Blog</Link>
+                        <Link className={headerStyles.nav_item} activeClassName={headerStyles.active_nav_item} to="/blog">Blog</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link className={headerStyles.nav_item} activeClassName={headerStyles.active_nav_item} to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>
