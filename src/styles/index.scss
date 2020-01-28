@@ -1,4 +1,8 @@
-$primary-color: #333;
+$primary-color: #424242;
+$seconday-color: #FAFAFA;
+$primary-dark: #212121;
+$main-color: #ff3366;
+
 
 * {
     color: $primary-color;
@@ -7,6 +11,7 @@ $primary-color: #333;
 }
 
 html {
+    background-color: $seconday-color;
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -16,4 +21,14 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: $primary-color;
 }

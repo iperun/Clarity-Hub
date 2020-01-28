@@ -5,5 +5,17 @@
  */
 
 module.exports = {
-    plugins: ['gatsby-plugin-sass']
+    siteMetadata: {
+        title: 'Clarity Hub',
+        author: 'Ivan Perun'
+    },
+    plugins: [
+        'gatsby-plugin-sass',
+        {
+            resolve: `gatsby-plugin-typography`,
+            options: {
+              pathToConfigModule: `src/utils/typography`,
+            },
+          }
+    ]
 }
