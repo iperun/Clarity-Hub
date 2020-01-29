@@ -5,11 +5,15 @@ $primary-light: #757575;
 $main-color: #FF3366;
 
 .header {
-    padding: 1rem 0 3rem;
+    padding: 0 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title {
-    color: #000;
+    color: $primary-dark;
     font-size: 3rem;
     text-decoration: none;
 }
@@ -22,19 +26,20 @@ $main-color: #FF3366;
 
 .nav_item {
     color: $primary-light;
-    font-size: 0.9rem;
     margin-right: 1.3rem;
     text-decoration: none;
 }
 
+.nav_item_last {
+    margin-right: 0;
+    transition: all .4s ease .4s;
+}
+
 .nav_item:hover {
-    color: $primary-dark;
+    opacity: .8;
 }
 
 .active_nav_item {
-    color: $primary-dark;
-}
-
-.test {
     color: $main-color;
+    box-shadow: inset 0px -1px 0px $main-color;
 }

@@ -1,0 +1,45 @@
+$primary-color: #424242;
+$seconday-color: #FAFAFA;
+$primary-dark: #212121;
+$main-color: #ff3366;
+
+.copyright {
+    margin: 0;
+}
+
+a {
+    color: $primary-dark;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.social {
+    color: $primary-dark;
+    text-decoration: none;
+    transition: all .2s ease;
+    margin-left: 1rem;
+    box-shadow: inset 0px -1px 0px #4242424f;
+}
+
+.pdesign {
+    box-shadow: inset 0px -1px 0px #4242424f;
+}
+
+.social:first-child {
+    margin-left: 0;
+}
+
+.social:hover {
+    opacity: .8;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}

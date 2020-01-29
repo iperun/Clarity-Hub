@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className={headerStyles.header}>
             <h1>
-                <Link className={headerStyles.title+' '+headerStyles.test} to='/'>Clarity
+                <Link className={headerStyles.title} to='/'>Clarity
                 </Link>
             </h1>
             <nav>
@@ -17,10 +17,10 @@ const Header = () => {
                         <Link className={headerStyles.nav_item} activeClassName={headerStyles.active_nav_item} to="/">Home</Link>
                     </li>
                     <li>
-                        <Link className={headerStyles.nav_item} activeClassName={headerStyles.active_nav_item} to="/blog">Blog</Link>
+                        <Link className={headerStyles.nav_item} activeClassName={headerStyles.active_nav_item} to="/about">About</Link>
                     </li>
                     <li>
-                        <Link className={headerStyles.nav_item} activeClassName={headerStyles.active_nav_item} to="/contact">Contact</Link>
+                        <Link className={headerStyles.nav_item+' '+headerStyles.nav_item_last} activeClassName={headerStyles.active_nav_item} to="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>
